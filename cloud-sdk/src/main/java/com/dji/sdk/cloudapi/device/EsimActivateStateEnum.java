@@ -17,6 +17,7 @@ public enum EsimActivateStateEnum {
 
     ACTIVATED(1),
 
+    UNKNOWN_2(2)
     ;
 
     private final int state;
