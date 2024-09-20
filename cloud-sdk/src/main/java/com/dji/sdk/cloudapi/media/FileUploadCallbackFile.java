@@ -15,6 +15,8 @@ public class FileUploadCallbackFile {
 
     private String objectKey;
 
+    private String cloudToCloudId;
+
     private UploadCallbackFileMetadata metadata;
 
     public FileUploadCallbackFile() {
@@ -28,7 +30,17 @@ public class FileUploadCallbackFile {
                 ", path='" + path + '\'' +
                 ", objectKey='" + objectKey + '\'' +
                 ", metadata=" + metadata +
+                ", cloudToCloudId='" + cloudToCloudId + '\'' +
                 '}';
+    }
+
+    public String getCloudToCloudId() {
+        return cloudToCloudId;
+    }
+
+    public FileUploadCallbackFile setCloudToCloudId(String cloudToCloudId) {
+        this.cloudToCloudId = cloudToCloudId;
+        return this;
     }
 
     public UploadCallbackFileExtension getExt() {
